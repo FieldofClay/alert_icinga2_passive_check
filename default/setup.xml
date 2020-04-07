@@ -1,0 +1,25 @@
+<setup>
+    <block title="Icinga2 Passive Check">
+        <text>Configure</text>
+    </block>
+
+    <block title="Icinga2 Instance" endpoint="admin/alert_actions" entity="icinga_passive_check">
+        <input field="param.host">
+            <label>Hostname/IP</label>
+            <type>text</type>
+        </input>
+        <input field="param.port">
+            <label>Port</label>
+            <type>text</type>
+        </input>
+        <input field="param.user">
+            <label>Username</label>
+            <type>text</type>
+        </input>
+        <input field="param.pass">
+            <label>Password</label>
+            <type>password</type>
+        </input>
+    </block>
+
+</setup>

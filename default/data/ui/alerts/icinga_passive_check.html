@@ -1,0 +1,104 @@
+<form>
+	<div class='control-group'>
+		<label class="control-label" for="icinga_passive_check">Type <span class="required">*</span> </label>
+		<div class="controls">
+			<splunk-text-input name="action.icinga_passive_check.param.type" id="icinga_passive_check_type" required />
+		</div>
+	</div>
+	<div class="control-group">
+		<div class="controls">
+			<span class="help-block" style="display: block; position: static; width: auto; margin-left: 0;">
+				Can be "Service" or "Host"
+			</span>
+		</div>
+	</div>
+	<div class='control-group'>
+		<label class="control-label" for="icinga_passive_check">Filter <span class="required">*</span> </label>
+		<div class="controls">
+			<splunk-text-input name="action.icinga_passive_check.param.filter" id="icinga_passive_check_filter" required />
+		</div>
+	</div>
+	<div class="control-group">
+		<div class="controls">
+			<span class="help-block" style="display: block; position: static; width: auto; margin-left: 0;">
+				Filter string for Icinga2. See https://icinga.com/docs/icinga2/latest/doc/12-icinga2-api/#filters
+			</span>
+		</div>
+	</div>
+	<div class='control-group'>
+		<label class="control-label" for="icinga_passive_check">Exit Status <span class="required">*</span> </label>
+		<div class="controls">
+			<splunk-text-input name="action.icinga_passive_check.param.exit_status" id="icinga_passive_check_exit_status" required />
+		</div>
+	</div>
+	<div class="control-group">
+		<div class="controls">
+			<span class="help-block" style="display: block; position: static; width: auto; margin-left: 0;">
+				Exit status of the check. For services: 0=OK, 1=WARNING, 2=CRITICAL, 3=UNKNOWN, for hosts: 0=OK, 1=CRITICAL.
+			</span>
+		</div>
+	</div>
+	<div class='control-group'>
+		<label class="control-label" for="icinga_passive_check">Plugin Output <span class="required">*</span> </label>
+		<div class="controls">
+			<splunk-text-input name="action.icinga_passive_check.param.plugin_output" id="icinga_passive_check_plugin_output" required />
+		</div>
+	</div>
+	<div class="control-group">
+		<div class="controls">
+			<span class="help-block" style="display: block; position: static; width: auto; margin-left: 0;">
+				Plugin output. Eg. "PING CRITICAL - Packet loss = 100%"
+			</span>
+		</div>
+	</div>
+	<div class='control-group'>
+		<label class="control-label" for="icinga_passive_check">Performance Data</label>
+		<div class="controls">
+			<splunk-text-input name="action.icinga_passive_check.param.performance_data" id="icinga_passive_check_performance_data" />
+		</div>
+	</div>
+	<div class="control-group">
+		<div class="controls">
+			<span class="help-block" style="display: block; position: static; width: auto; margin-left: 0;">
+				Plugin performance data. Can be comma separated. Eg. "rta=5000.000000ms;3000.000000;5000.000000;0.000000,pl=100%;80;100;0"
+			</span>
+		</div>
+	</div>
+	<div class='control-group'>
+		<label class="control-label" for="icinga_passive_check">Check Command</label>
+		<div class="controls">
+			<splunk-text-input name="action.icinga_passive_check.param.check_command" id="icinga_passive_check_check_command" />
+		</div>
+	</div>
+	<div class='control-group'>
+		<label class="control-label" for="icinga_passive_check">Check Source</label>
+		<div class="controls">
+			<splunk-text-input name="action.icinga_passive_check.param.check_source" id="icinga_passive_check_check_source" />
+		</div>
+	</div>
+	<div class='control-group'>
+		<label class="control-label" for="icinga_passive_check">Execution Start</label>
+		<div class="controls">
+			<splunk-text-input name="action.icinga_passive_check.param.execution_start" id="icinga_passive_check_execution_start" />
+		</div>
+	</div>
+	<div class='control-group'>
+		<label class="control-label" for="icinga_passive_check">Execution End</label>
+		<div class="controls">
+			<splunk-text-input name="action.icinga_passive_check.param.execution_end" id="icinga_passive_check_execution_end" />
+		</div>
+	</div>
+	<div class='control-group'>
+		<label class="control-label" for="icinga_passive_check">Time-to-live</label>
+		<div class="controls">
+			<splunk-text-input name="action.icinga_passive_check.param.ttl" id="icinga_passive_check_ttl" />
+		</div>
+	</div>
+	<div class="control-group">
+		<div class="controls">
+			<span class="help-block" style="display: block; position: static; width: auto; margin-left: 0;">
+				Time-to-live duration in seconds for this check result.
+			</span>
+		</div>
+	</div>
+</form>
