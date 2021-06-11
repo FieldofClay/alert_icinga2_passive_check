@@ -45,7 +45,7 @@ if len(sys.argv) > 1 and sys.argv[1] == "--execute":
             payload['check_command'] = config['check_command']
         if 'check_source' in config:
             payload['check_source'] = config['check_source']
-        if 'execuution_start' in config:
+        if 'execution_start' in config:
             payload['execution_start'] = config['execution_start']
         if 'execution_end' in config:
             payload['execution_end'] = config['execution_end']
